@@ -1,0 +1,199 @@
+{
+    "menu": [
+      {
+        "category": "Hot Beverages",
+        "items": [
+          {
+            "name": "Affogato",
+            "description": "A shot of hot espresso poured over a scoop of vanilla ice cream, blending the richness of both for a decadent dessert-drink experience.",
+            "price": 250
+          },
+          {
+            "name": "Hazelnut Cappuccino",
+            "description": "A classic cappuccino infused with the sweet, nutty flavor of hazelnut, topped with frothy milk.",
+            "price": 180
+          },
+          {
+            "name": "Caramel Cappuccino",
+            "description": "A delicious twist on the cappuccino, sweetened with rich caramel syrup and finished with creamy foam.",
+            "price": 180
+          },
+          {
+            "name": "Vanilla Cappuccino",
+            "description": "The warm flavors of vanilla elevate this cappuccino, offering a smooth and comforting taste.",
+            "price": 180
+          },
+          {
+            "name": "Hazelnut Latte",
+            "description": "A smooth latte infused with hazelnut flavor, topped with frothy milk.",
+            "price": 180
+          }
+        ]
+      },
+      {
+        "category": "Israeli Dishes",
+        "items": [
+          {
+            "name": "Shakshuka",
+            "description": "A flavorful dish of poached eggs in a rich and spicy tomato sauce with peppers, onions, and aromatic spices. Served with a side of fresh bread for dipping.",
+            "price": 450
+          },
+          {
+            "name": "Hummus Pita",
+            "description": "Creamy, smooth hummus served with warm, fluffy pita bread. A perfect combination of flavors from chickpeas, tahini, lemon, and garlic.",
+            "price": 300
+          },
+          {
+            "name": "Falafel Platter",
+            "description": "Crispy on the outside, soft on the inside—these golden-brown chickpea fritters are served with a side of hummus, salad, and pita.",
+            "price": 400
+          }
+        ]
+      },
+      {
+        "category": "Cold Brew",
+        "items": [
+          {
+            "name": "Iced Cappuccino",
+            "description": "A chilled version of the classic cappuccino, with a balance of espresso, cold milk, and topped with frothy foam, served over ice.",
+            "price": 200
+          },
+          {
+            "name": "Iced Latte",
+            "description": "Smooth espresso mixed with cold milk and served over ice for a creamy, refreshing drink.",
+            "price": 200
+          },
+          {
+            "name": "Iced Americano",
+            "description": "A simple, strong coffee drink made by pouring espresso over ice and diluting it with cold water, perfect for those who love a bold taste.",
+            "price": 180
+          },
+          {
+            "name": "Iced Caramel Latte",
+            "description": "A chilled blend of espresso, milk, and caramel syrup, served over ice for a sweet and creamy coffee experience.",
+            "price": 240
+          },
+          {
+            "name": "Iced Vanilla Latte",
+            "description": "A smooth iced latte blended with the sweet and comforting flavor of vanilla.",
+            "price": 240
+          }
+        ]
+      },
+      {
+        "category": "Frappé",
+        "items": [
+          {
+            "name": "Hazelnut Frappé",
+            "description": "A creamy, blended iced coffee infused with the sweet and nutty flavor of hazelnut, topped with whipped cream for an indulgent treat.",
+            "price": 250
+          },
+          {
+            "name": "Café Frappé",
+            "description": "A classic iced coffee blended to perfection, offering a smooth, rich taste of coffee with a refreshing chill, topped with whipped cream.",
+            "price": 220
+          },
+          {
+            "name": "Irish Frappé",
+            "description": "A rich, blended iced coffee with the smooth flavor of Irish cream (non-alcoholic), offering a perfect balance of sweetness and coffee kick.",
+            "price": 250
+          },
+          {
+            "name": "Caramel Frappé",
+            "description": "A luscious blend of cold coffee, caramel syrup, and milk, topped with whipped cream and drizzled with caramel sauce for an extra sweet finish.",
+            "price": 250
+          },
+          {
+            "name": "Vanilla Frappé",
+            "description": "A smooth and creamy frappé blended with vanilla flavor, topped with whipped cream for a classic indulgence.",
+            "price": 250
+          }
+        ]
+      },
+      {
+        "category": "Mojitos",
+        "items": [
+          {
+            "name": "Watermelon Mojito",
+            "description": "A refreshing blend of fresh watermelon juice, mint leaves, lime, and a splash of soda, making it a perfect summer cooler.",
+            "price": 180
+          },
+          {
+            "name": "Blue Lagoon Mojito",
+            "description": "A vibrant, blue mojito featuring the zesty flavors of lime and mint, with a twist of blue curaçao (non-alcoholic) for a tropical escape.",
+            "price": 180
+          },
+          {
+            "name": "Green Gin Cooler",
+            "description": "A crisp and refreshing gin-based cooler mixed with mint, lime, and cucumber, topped with soda for a light, herbaceous taste.",
+            "price": 180
+          },
+          {
+            "name": "Peach Mojito",
+            "description": "A fruity twist on the classic mojito, featuring sweet peach syrup, fresh mint, lime, and soda for a light and fizzy drink.",
+            "price": 180
+          },
+          {
+            "name": "Mint Mojito",
+            "description": "A refreshing mojito made with mint, lime, sugar, and soda water, perfect for a cooling experience.",
+            "price": 180
+          }
+        ]
+      },
+      {
+        "category": "Iced Teas & Lemonades",
+        "items": [
+          {
+            "name": "Peach Iced Tea",
+            "description": "A sweet, fruity iced tea infused with the flavor of ripe peaches, offering a refreshing and light summer cooler.",
+            "price": 150
+          },
+          {
+            "name": "Lemon Iced Tea",
+            "description": "A classic, chilled tea with a hint of lemon for a perfectly refreshing drink on a warm day.",
+            "price": 150
+          },
+          {
+            "name": "Lemonade",
+            "description": "A zesty and tangy homemade lemonade made with freshly squeezed lemons, sugar, and chilled water.",
+            "price": 120
+          },
+          {
+            "name": "Mint Lemonade",
+            "description": "A refreshing twist on the classic lemonade, with a burst of fresh mint and lime, offering a cool and tangy experience.",
+            "price": 140
+          }
+        ]
+      },
+      {
+        "category": "Shakes",
+        "items": [
+          {
+            "name": "KitKat Shake",
+            "description": "A rich and creamy shake blended with crunchy KitKat bars, topped with whipped cream and chocolate drizzle for an indulgent treat.",
+            "price": 240
+          },
+          {
+            "name": "Oreo Shake",
+            "description": "A delicious shake made with Oreo cookies, milk, and ice cream, topped with whipped cream and cookie crumbs.",
+            "price": 230
+          },
+          {
+            "name": "Vanilla Shake",
+            "description": "A classic, creamy vanilla shake made with rich vanilla ice cream and milk, perfect for a smooth and refreshing experience.",
+            "price": 200
+          },
+          {
+            "name": "Strawberry Shake",
+            "description": "A creamy strawberry shake made with fresh strawberries and ice cream, topped with whipped cream.",
+            "price": 220
+          },
+          {
+            "name": "Chocolate Shake",
+            "description": "A decadent shake made with creamy chocolate ice cream, topped with whipped cream and drizzled with chocolate syrup.",
+            "price": 220
+          }
+        ]
+      }
+    ]
+  }
