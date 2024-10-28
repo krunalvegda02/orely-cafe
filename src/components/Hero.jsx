@@ -4,7 +4,7 @@ import CategoryCard from "./CategoryCard";
 import menus from "../menu.json";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { openSidebar, closeSidebar } from "../redux/SidebarSlice";
+import { openSidebar, closeSidebar } from "../redux/Slices/SidebarSlice";
 import Sidebar from './Sidebar';
 import "../App.css";
 
@@ -42,7 +42,7 @@ function Hero({ }) {
       </div>
 
       {/* Display items */}
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap  gap-4 sm:flex-row">
         {filteredItems.map((item, index ) => (
           <ItemCard 
           key={index} 

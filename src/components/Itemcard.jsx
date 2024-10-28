@@ -13,7 +13,7 @@ export const ItemCard = ({ item, Quantity, sidebarOpen }) => {
 
   return (
     <div
-      className={`bg-white rounded-2xl shadow-md p-4 max-w-xs flex flex-col justify-between w-[291px] transition-all duration-300 ${
+      className={`bg-white rounded-2xl shadow-md p-4 max-w-xs lg:flex lg:flex-col lg:justify-between w-[291px] transition-all duration-300 ${
         sidebarOpen ? "mr-64" : ""
       }`}
     >

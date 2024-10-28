@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CloseCircleOutlined } from "@ant-design/icons"
 import { useDispatch, useSelector } from "react-redux";
-import { closeSidebar } from "../redux/SidebarSlice";
+import { closeSidebar } from "../redux/Slices/SidebarSlice";
 
 const Sidebar = ({ isOpen }) => {
   const dispatch = useDispatch();
@@ -21,7 +21,7 @@ const Sidebar = ({ isOpen }) => {
 
   return (
     <div
-      className={`fixed top-0 right-0 h-full w-80 bg-white shadow-lg transition-transform transform ${
+      className={`fixed top-0 right-0 h-full w-80 bg-white shadow-lg duration-500 transition-transform transform ${
         isOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >

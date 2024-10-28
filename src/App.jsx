@@ -1,11 +1,8 @@
-import { useState } from 'react'
 import Header from './components/Header';
 import Hero from "./components/Hero";
-import MenuDisplay from './components/CategoryCard';
+import react from "react"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
     <Header />
