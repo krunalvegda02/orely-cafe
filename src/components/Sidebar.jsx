@@ -3,29 +3,32 @@ import { CloseCircleOutlined } from "@ant-design/icons";
 import { useDispatch, useSelector } from "react-redux";
 import { closeSidebar , openBillsider } from "../redux/Slices/SidebarSlice";
 import BillSider  from "../components/billSider";
- 
+import { setMenuIndex } from "../redux/Slices/MenuIndexSlice"; 
+
 const Sidebar = ({ isOpen }) => {
   const dispatch = useDispatch();
   // Retrieve table data from the Redux store
   const tables = useSelector((state) => state.tables);
   const billSiderOpen = useSelector((state) => state.sidebar.billSiderOpen);
- 
+  const menuIndex = useSelector((state) => state.menuIndex);
+
   const closeButtonClick = () => {
     dispatch(closeSidebar());
   };
 
-  const openBillSidebar = () =>{
+  const openBillSidebar = (index) =>{
+    dispatch(setMenuIndex(index));
+    console.log(setMenuIndex(index))
     dispatch(openBillsider());
   }
 
-  
+
 
   return (
     <>
      <div
-      className={`fixed top-0 right-0  h-full w-80 bg-white shadow-lg duration-500 transition-transform transform ${
-        isOpen ? "translate-x-0" : "translate-x-full"
-      }`}
+      className={ `fixed top-0 right-0  h-full w-80 bg-white shadow-lg duration-500 transition-transform transform 
+        ${isOpen ? "translate-x-0" : "translate-x-full"}` }
     >
       <div className="p-4 flex justify-between items-center">
         <h2 className="text-3xl font-semibold font-sans">Tables</h2>
@@ -50,7 +53,7 @@ const Sidebar = ({ isOpen }) => {
                 <h2 className="text">+91 {tables.customerContact}</h2>
               </div>
               <button  
-              onClick={openBillSidebar}
+              onClick={()=>openBillSidebar(index)}
               >
                 <img
                   className="mr-2"
@@ -69,7 +72,7 @@ const Sidebar = ({ isOpen }) => {
       
     </div>
 
-    <BillSider isOpen={billSiderOpen} index={tables.index} />
+    <BillSider isOpen={billSiderOpen} index={menuIndex}/>
   
     </>
    

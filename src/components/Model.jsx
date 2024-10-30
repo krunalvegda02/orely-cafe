@@ -1,13 +1,13 @@
 // CustomerFormModal.js
 import React, { useState} from "react";
 import { Button, Form, Input, Select } from "antd";
-import { useDispatch } from "react-redux";
+import { useDispatch ,useSelector} from "react-redux";
 import { addCustomerDetails } from "../redux/Slices/TableSlices";
-import { openSidebar } from "../redux/Slices/SidebarSlice";
+import { openBillsider, openSidebar } from "../redux/Slices/SidebarSlice";
 import { setMenuIndex } from "../redux/Slices/MenuIndexSlice"; // Adjust the path if necessary
 
 function Modal({ isOpen, onClose }) {
-
+  const menuIndex = useSelector((state) => state.menuIndex)
   const [tableIndex, setTableIndex] = useState(0);
 
   const [form] = Form.useForm();
@@ -44,11 +44,9 @@ function Modal({ isOpen, onClose }) {
             console.log(values);
             setTableIndex(values.tableIndex);
             dispatch(addCustomerDetails(values));
-           
-            
             form.resetFields();
             onClose();
-            dispatch(openSidebar());
+            dispatch(openBillsider(menuIndex));
           }}
           layout="vertical"
           style={{ maxWidth: 600 }}

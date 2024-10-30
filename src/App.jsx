@@ -1,9 +1,7 @@
 import Header from './components/Header';
 import Hero from "./components/Hero";
-
 import {store } from "./redux/store"
 import { useSelector } from 'react-redux';
-import  menuIndex  from "../src/redux/Slices/MenuIndexSlice"
 
 function App() {
 

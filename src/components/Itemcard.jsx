@@ -8,7 +8,7 @@ export const ItemCard = ({ item, itemQuantity, sidebarOpen, addItem, removeItem 
       }`}
     >
       <img
-        alt="Illustration of Chicken Dimsum in a bamboo steamer with chopsticks and a leaf on a mat"
+        alt="Menu Items"
         className="rounded-t-lg"
         src="https://placehold.co/300x200"
       />

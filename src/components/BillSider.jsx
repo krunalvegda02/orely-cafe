@@ -1,19 +1,29 @@
 import React from "react";
 import { CloseCircleOutlined } from "@ant-design/icons";
 import { closebillsider } from "../redux/Slices/SidebarSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
-const BillSider = ({ isOpen , index}) => {
-  console.log(index);
+const BillSider = ({ isOpen, index }) => {
   const dispatch = useDispatch();
+  const tableDetails = useSelector((state) => state.tables);
+  const selectedTable = tableDetails[index];
+  //  console.log("Table Detakils: " + selectedTable );
+
   const closeButtonClick = () => {
     dispatch(closebillsider());
   };
 
   const PassBill = () => {
     // TODO: Download Bill
+    console.log("Download BIll");
     // TODO make total of orders  {It should be other function}
   };
+
+  const orders = selectedTable ? selectedTable.orders : [];
+  const totalAmount = orders.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0
+  );
 
   return (
     <div
@@ -36,34 +46,46 @@ const BillSider = ({ isOpen , index}) => {
       </div>
 
       {/* BILL Section */}
-
       {/* Header With Download Option*/}
       <div className="flex flex-col justify-between h-[calc(100%-72px)] px-2 pt-1 ">
-        <div className="LEFT">
-          <h2 className="font-semibold text-[21px]">Table 5:</h2>
-          <h4 className="text-[20px] fon">Krunal D. Vegda</h4>
-          <h4>+91 9427109237</h4>
-        </div>
+        {selectedTable && (
+          <div className="LEFT">
+            <h2 className="font-semibold text-[21px]">Table {index + 1}:</h2>
+            <h4 className="text-[20px]">{selectedTable.customerName}</h4>
+            <h4>+91 {selectedTable.customerContact} </h4>
+          </div>
+        )}
 
         {/* Middle section for bill items */}
-        <div className="overflow-y-auto flex-grow space-y-1 ">
+        <div className="overflow-y-auto flex-grow scrollbar-hide space-y-2 ">
           <h2 className="text-2xl font-semibold mt-4 mb-2">Orders,</h2>
 
           {/* Individual order item card */}
-          <div className="flex items-center justify-between">
-            <div className="Itemcounter flex items-center justify-center  border-2 rounded-full h- w-8">
-              x1
-            </div>
-            <div>
-              <img
-                src="https://cdn.tasteatlas.com//Images/Dishes/dec410f7acfa475bbf94668ba691d96f.jpg?mw=1300"
-                alt="FOOD image"
-                className="object-cover border border-gray-300 rounded-full h-12 w-12 mx-2"
-              />
-            </div>
-            <div className="text-lg mx-2">Hazelnut Cappuccino</div>
-            <div className="price text-lg font-semibold">$29.05</div>
-          </div>
+          {orders.length === 0 ? (
+            <p className="flex justify-center pt-14 text-2xl">
+              No Order Placed...!
+            </p>
+          ) : (
+            orders.map((item, index) => (
+              <div key={index} className=" flex items-center justify-between">
+                <div className="Itemcounter flex items-center justify-center border-2 rounded-full h-8 w-8">
+                  x{item.quantity}
+                </div>
+                <div className="flex  items-center flex-grow">
+                  <img
+                    src={item.image || "https://via.placeholder.com/50"} // Placeholder if no image
+                    alt="Food"
+                    className="object-cover border border-gray-300 rounded-full h-12 w-12 mx-2"
+                  />
+
+                  <div className="text-lg mx-2">{item.name}</div>
+                </div>
+                <div className="price text-lg font-semibold ">
+                  ₹{item.price * item.quantity}
+                </div>
+              </div>
+            ))
+          )}
         </div>
 
         {/* BOttom Button */}
@@ -72,15 +94,15 @@ const BillSider = ({ isOpen , index}) => {
             {/* Horizontal line for dividing header and bill part */}
             <hr className="border-[1px]" />
           </div>
-          <div className="flex justify-between font-semibold text-2xl mb-1">
+          <div className="flex justify-between font-semibold text-2xl ">
             <div>Total:</div>
-            <div>$300</div>
+            <div> ₹ {totalAmount}</div>
           </div>
           <button
-            onClick={PassBill}
-            className="container bg-blue-600 h-10 rounded-2xl text-white font-medium my-5"
+            onClick={totalAmount}
+            className="container bg-blue-600 h-10 rounded-2xl text-white font-medium text-lg my-5"
           >
-            Charge Customer
+            Charge Customer {`₹ ${totalAmount}`}
           </button>
         </div>
       </div>
