@@ -6,8 +6,9 @@ import rootReducer from "../redux/rootReducer";
 // Persist configuration
 const persistConfig = {
   key: "root",
+  version: 1,
   storage,
-  whitelist: ["sidebar", "tables" ],
+  whitelist: ["sidebar", "tables", "menuIndex" ],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
@@ -22,5 +23,8 @@ export const store = configureStore({
 });
 
 export const persistor = persistStore(store);
+// if (process.env.NODE_ENV === 'development') {
+//   persistor.purge();
+// }
 
 export default store;

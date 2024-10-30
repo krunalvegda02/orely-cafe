@@ -1,21 +1,18 @@
 // CustomerFormModal.js
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { Button, Form, Input, Select } from "antd";
 import { useDispatch } from "react-redux";
 import { addCustomerDetails } from "../redux/Slices/TableSlices";
 import { openSidebar } from "../redux/Slices/SidebarSlice";
-
+import { setMenuIndex } from "../redux/Slices/MenuIndexSlice"; // Adjust the path if necessary
 
 function Modal({ isOpen, onClose }) {
+
   const [tableIndex, setTableIndex] = useState(0);
 
   const [form] = Form.useForm();
 
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    console.log("the table index in the app js is ", tableIndex);
-  }, [tableIndex]);
 
   const handleOverlayClick = (e) => {
     if (e.target === e.currentTarget) {
@@ -24,12 +21,13 @@ function Modal({ isOpen, onClose }) {
   };
 
   const handleTableClick = (index) => {
-    // console.log("Setting table index to:", index); // Check index value
     setTableIndex(index);
-    
-    form.setFieldsValue({ tableIndex: index }); // Update form field as well
+    form.setFieldsValue({ tableIndex: index }); 
+    dispatch(setMenuIndex(index));
+    // console.log("MENU INDEX:" +""+ index);
   };
 
+ 
   if (!isOpen) return null;
   return (
     <div
@@ -46,7 +44,8 @@ function Modal({ isOpen, onClose }) {
             console.log(values);
             setTableIndex(values.tableIndex);
             dispatch(addCustomerDetails(values));
-            // dispatch(setIndex(tableIndex)); 
+           
+            
             form.resetFields();
             onClose();
             dispatch(openSidebar());
@@ -78,7 +77,7 @@ function Modal({ isOpen, onClose }) {
           >
             {/* <Select placeholder="Select a Table" allowClear> */}
             <div className="grid grid-cols-5 gap-2">
-              {Array.from({ length: 10 }, (_, i) => (
+              {Array.from({ length: 20 }, (_, i) => (
                 <button
                   key={i}
                   type="button"

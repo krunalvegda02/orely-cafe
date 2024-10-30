@@ -9,22 +9,22 @@ export const sidebarSlice = createSlice({
   reducers: {
     openSidebar: (state, action) => {
       state.sidebarOpen = true;
-      console.log("sidebar Opened");
+      // console.log("sidebar Opned");
     },
 
     closeSidebar: (state, action) => {
       state.sidebarOpen = false;
-      console.log("sidebar Closed");
+      // console.log("sidebar Closed");
     },
 
     openBillsider: (state, action) => {
       state.billSiderOpen = true;
-      console.log("billbar Opened");
+      // console.log("billbar Opened");
     },
 
     closebillsider: (state, action) => {
       state.billSiderOpen = false;
-      console.log("billbar closed");
+      // console.log("billbar closed");
     },
   },
 });

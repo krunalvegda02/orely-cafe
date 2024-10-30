@@ -1,15 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = 
-  Array.from({ length: 10 }, () => ({
+  Array.from({ length: 20 }, () => ({
     tableId: null,
-    orders: [],
     customerName: null,
     customerContact: null,
+    orders: [],
   }))
   
-  
- 
 const tableSlice = createSlice({
   name: "tables",
   initialState,
@@ -42,6 +40,7 @@ const tableSlice = createSlice({
       const existingItem = table.orders.find(
         (item) => item.name === menuItem.name
       );
+
       if (existingItem) {
         existingItem.quantity -= 1;
         if (existingItem.quantity === 0) {
@@ -57,6 +56,7 @@ const tableSlice = createSlice({
       state[tableIndex].orders = [];
       state[tableIndex].customerName = null;
       state[tableIndex].customerContact = null;
+      state[tableIndex].tableId = null;
     },
 
     addCustomerDetails(state, action) {

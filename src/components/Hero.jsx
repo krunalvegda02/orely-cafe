@@ -16,7 +16,8 @@ function Hero({tableIndex}) {
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
   };
-
+  const menuIndex = useSelector((state) => state.menuIndex);
+  console.log("menuIndex" + menuIndex)
   //? Filtered items
   const filteredItems =
     selectedCategory === "All Menu"
@@ -29,21 +30,22 @@ function Hero({tableIndex}) {
 
   const addTOMenu = () => {
     console.log("addMenu called");
-    // dispatch(addToOrder({ tableIndex, menuItem: item }));
+    dispatch(addToOrder({ tableIndex, menuItem: item }));
   };
 
   const removeFromMenu = () => {
     console.log("removeMenu called");
-    // dispatch(removeFromOrder({ tableIndex, menuItem: item }));
+    dispatch(removeFromOrder({ tableIndex, menuItem: item }));
   };
 
   const resetOrder = () => {
     dispatch(resetOrder({ tableIndex }));
   };
 
-  useEffect(() => {
-         console.log("tables state from Redux:", tables); // Check if tables data is coming through correctly
-       }, [tables]);
+// todo
+      //  useEffect(() => {
+      //    console.log("tables state from Redux:", tables); // Check if tables data is coming through correctly
+      //  }, [tables]);
     
   return (
     <div

@@ -18,6 +18,8 @@ const Sidebar = ({ isOpen }) => {
     dispatch(openBillsider());
   }
 
+  
+
   return (
     <>
      <div
@@ -35,7 +37,7 @@ const Sidebar = ({ isOpen }) => {
         </button>
       </div>
 
-      <div className="container ml-2 overflow-y-auto scrollbar-hide h-full ">
+      <div className="container ml-2 overflow-y-auto scrollbar-hide  h-[90%] ">
         {tables.map((tables, index) =>
           tables.customerName ? (
             <div
@@ -67,7 +69,8 @@ const Sidebar = ({ isOpen }) => {
       
     </div>
 
-    <BillSider isOpen={billSiderOpen} />
+    <BillSider isOpen={billSiderOpen} index={tables.index} />
+  
     </>
    
     

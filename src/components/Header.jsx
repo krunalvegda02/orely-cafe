@@ -53,7 +53,7 @@ function Header() {
           <button
             type="button"
             onClick={onSidebarIconClick}
-            onDoubleClick={handleDoubleClick}
+            // onDoubleClick={handleDoubleClick}
             className="text-center pl-3 text-white"
           >
            <img 
