@@ -1,25 +1,15 @@
-import React, { useState, useEffect } from "react";
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
 
-export const ItemCard = ({ item, Quantity, sidebarOpen }) => {
-  const [ItemQuantity, setItemQuantity] = useState(0);
-  const addItem = () => setItemQuantity((prevCount) => prevCount + 1);
-  const removeItem = () =>
-    setItemQuantity((prevCount) => Math.max(prevCount - 1, 0));
-
-  useEffect(() => {
-    console.log(ItemQuantity);
-  }, [ItemQuantity]);
-
+export const ItemCard = ({ item, itemQuantity, sidebarOpen, addItem, removeItem }) => {
   return (
     <div
-      className={`bg-white rounded-2xl shadow-md p-4 max-w-xs lg:flex lg:flex-col lg:justify-between w-[291px] transition-all duration-300 ${
+      className={`bg-white rounded-2xl shadow-md p-4 max-w-xs lg:flex lg:flex-col lg:justify-evenly xl:w-[295.5px] md:w-[250px] transition-all duration-300 ${
         sidebarOpen ? "mr-64" : ""
       }`}
     >
       <img
         alt="Illustration of Chicken Dimsum in a bamboo steamer with chopsticks and a leaf on a mat"
-        className="rounded-t-lg w-full"
+        className="rounded-t-lg"
         src="https://placehold.co/300x200"
       />
       <div className="p-4 flex-grow">
@@ -35,7 +25,7 @@ export const ItemCard = ({ item, Quantity, sidebarOpen }) => {
               className="text-red-500 w-6 h-6 hover:bg-blue-500 hover:rounded-full hover:w-8 hover:h-8 transition-all ease-in-out duration-200 flex items-center justify-center"
             />
           </div>
-          <span className="text-2xl">{ItemQuantity}</span>
+          <span className="text-2xl">{itemQuantity}</span>
           <div className="flex items-center justify-center">
             <PlusOutlined
               onClick={addItem}

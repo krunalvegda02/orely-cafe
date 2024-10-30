@@ -1,16 +1,17 @@
-import { ConsoleSqlOutlined } from "@ant-design/icons";
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = Array.from({ length: 10 }, () => ({
-  tableId: null,
-  isTableSelected: false,
-  orders: [],
-  customerName: null,
-  customerContact: null,
-}));
-
+const initialState = 
+  Array.from({ length: 10 }, () => ({
+    tableId: null,
+    orders: [],
+    customerName: null,
+    customerContact: null,
+  }))
+  
+  
+ 
 const tableSlice = createSlice({
-  name: "Tables",
+  name: "tables",
   initialState,
   reducers: {
    
@@ -18,6 +19,7 @@ const tableSlice = createSlice({
     // ?Behavior:
     // ?If the item already exists, it increments its quantity.
     // ?Otherwise, it adds a new item with an initial quantity of 1.
+    
     addToOrder(state, action) {
       const { tableIndex, menuItem } = action.payload;
       const table = state[tableIndex];
@@ -50,12 +52,6 @@ const tableSlice = createSlice({
       }
     },
 
-    onTableSelect(state, action) {
-      const tableIndex = action.payload;
-      state.onTableSelecet = true;
-      console.log("Table Selected");
-    },
-
     resetOrder(state, action) {
       const { tableIndex } = action.payload;
       state[tableIndex].orders = [];
@@ -67,11 +63,12 @@ const tableSlice = createSlice({
       const { tableIndex, customerName, customerContact } = action.payload;
       state[tableIndex].customerName = customerName;
       state[tableIndex].customerContact = customerContact;
+      state[tableIndex].tableId = tableIndex;
     },
   },
 });
 
-export const { addToOrder, removeFromOrder, onTableSelect ,resetOrder, addCustomerDetails } =
+export const { addToOrder, removeFromOrder ,resetOrder, addCustomerDetails } =
   tableSlice.actions;
 
 export default tableSlice.reducer;

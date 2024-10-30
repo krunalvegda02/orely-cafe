@@ -10,7 +10,6 @@ function Header() {
   const dispatch = useDispatch();
   const sidebarOpen = useSelector((state) => state.sidebar.sidebarOpen);
   const [isModalOpen, setModalOpen] = useState(false);
-  const [isRotated, setIsRotated] = useState(false);
   
   const handleNewOrderClick = () => {
     setModalOpen(true);
@@ -21,10 +20,8 @@ function Header() {
   };
 
   const onSidebarIconClick = () => {
-    setIsRotated(true); 
     if (sidebarOpen) {
       dispatch(closeSidebar());
-      setIsRotated(false); 
     } else {
       dispatch(openSidebar());
     }
@@ -34,7 +31,7 @@ function Header() {
     <>
       <div
         className={`lg:flex justify-between mr-2 transition-all duration-300 ${
-          sidebarOpen ? "mr-[27%]" : ""
+          sidebarOpen ? "mr-[25.8%]" : ""
         } `}
       >
         <h1 className="text-start font-light font-sans ml-4 text-[40px]">
@@ -59,7 +56,7 @@ function Header() {
            src="./src/assets/menu.png" 
            alt="Sidebar Icon" 
            height={55}  width={70} 
-           className={`transition-transform duration-500 ${isRotated ? "rotate-180" : ""}`} /> 
+           className={`transition-transform duration-500 ${ sidebarOpen ? "rotate-180" : ""}`} /> 
           </button>
           </div>
         </div>
@@ -72,7 +69,7 @@ function Header() {
         onClose={closeModal}
       />
 
-      <Sidebar isOpen={sidebarOpen} />
+      <Sidebar isOpen={sidebarOpen}  />
     </>
   );
 }

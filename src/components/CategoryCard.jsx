@@ -6,11 +6,11 @@ const CategoryCard = ({onCategoryChange, selectedCategory  }) => {
   const categoryItems = categoryData.menu;
 
   return (
-    <div className="flex flex-row gap-2 ml-0 mb-3">
+    <div className="flex flex-row gap-2 ml-0 mb-3 ">
       {/* //* Show All MENU Option */}
       <h3
         onClick={() => onCategoryChange("All Menu")}
-        className={`rounded-3xl bg-white p-1 px-[15px] text-center shadow-2xl text-lg font-semibold border-2 text-gray-800 ${
+        className={`rounded-3xl bg-white p-1 px-[15px] text-center text-lg font-semibold border-2 text-gray-800 ${
           selectedCategory === "All" ? "border-blue-900" : "hover:border-blue-900"
         } transition-all duration-100 cursor-pointer`}
       >
@@ -22,7 +22,7 @@ const CategoryCard = ({onCategoryChange, selectedCategory  }) => {
         <div
           key={index}
           onClick={() => onCategoryChange(item.category)}
-          className={`rounded-3xl bg-white p-1 px-[15px] text-center shadow-2xl text-lg font-semibold border-2 text-gray-800 ${
+          className={`rounded-3xl bg-white p-1 px-[15px] text-center shadow-md text-lg font-semibold border-2 text-gray-800 ${
             selectedCategory === item.category ? "border-blue-900" : "hover:border-blue-900"
           } transition-all duration-100 cursor-pointer`}
         >

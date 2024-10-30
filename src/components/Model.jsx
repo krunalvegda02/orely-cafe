@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 import { Button, Form, Input, Select } from "antd";
 import { useDispatch } from "react-redux";
 import { addCustomerDetails } from "../redux/Slices/TableSlices";
+import { openSidebar } from "../redux/Slices/SidebarSlice";
+
+
 function Modal({ isOpen, onClose }) {
   const [tableIndex, setTableIndex] = useState(0);
 
@@ -21,7 +24,9 @@ function Modal({ isOpen, onClose }) {
   };
 
   const handleTableClick = (index) => {
+    // console.log("Setting table index to:", index); // Check index value
     setTableIndex(index);
+    
     form.setFieldsValue({ tableIndex: index }); // Update form field as well
   };
 
@@ -39,31 +44,34 @@ function Modal({ isOpen, onClose }) {
           name="control-hooks"
           onFinish={(values) => {
             console.log(values);
-            dispatch(addCustomerDetails(values));
             setTableIndex(values.tableIndex);
+            dispatch(addCustomerDetails(values));
+            // dispatch(setIndex(tableIndex)); 
+            form.resetFields();
             onClose();
+            dispatch(openSidebar());
           }}
           layout="vertical"
           style={{ maxWidth: 600 }}
         >
           <Form.Item
-          className="font-semibold"
-            name="CustomerName"
+            className="font-semibold"
+            name="customerName"
             label="Customer Name"
             rules={[{ required: true }]}
           >
             <Input />
           </Form.Item>
           <Form.Item
-          className="font-semibold"
-            name="CustomerNumber"
-            label="Customer Number"
+            className="font-semibold"
+            name="customerContact"
+            label="Contact Details"
             rules={[{ required: true }]}
           >
             <Input />
           </Form.Item>
           <Form.Item
-          className="font-semibold"
+            className="font-semibold"
             name="tableIndex"
             label="Select Table"
             rules={[{ required: true }]}
