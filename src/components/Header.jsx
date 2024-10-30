@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { openSidebar , closeSidebar } from "../redux/Slices/SidebarSlice";
+import { openSidebar , closeSidebar, closebillsider } from "../redux/Slices/SidebarSlice";
 import Sidebar from "./Sidebar";
 import Modal from "./Model";
 import { PlusOutlined } from "@ant-design/icons";
@@ -9,6 +9,7 @@ import { PlusOutlined } from "@ant-design/icons";
 function Header() {
   const dispatch = useDispatch();
   const sidebarOpen = useSelector((state) => state.sidebar.sidebarOpen);
+  const billSiderOpen = useSelector((state) => state.sidebar.billSiderOpen);
   const [isModalOpen, setModalOpen] = useState(false);
   
   const handleNewOrderClick = () => {
@@ -19,9 +20,11 @@ function Header() {
     setModalOpen(false);
   };
 
+
   const onSidebarIconClick = () => {
     if (sidebarOpen) {
       dispatch(closeSidebar());
+      dispatch(closebillsider());
     } else {
       dispatch(openSidebar());
     }
@@ -31,7 +34,7 @@ function Header() {
     <>
       <div
         className={`lg:flex justify-between mr-2 transition-all duration-300 ${
-          sidebarOpen ? "mr-[25.8%]" : ""
+          sidebarOpen || billSiderOpen ? "mr-[25.8%]" : ""
         } `}
       >
         <h1 className="text-start font-light font-sans ml-4 text-[40px]">
@@ -50,6 +53,7 @@ function Header() {
           <button
             type="button"
             onClick={onSidebarIconClick}
+            onDoubleClick={handleDoubleClick}
             className="text-center pl-3 text-white"
           >
            <img 

@@ -7,7 +7,8 @@ import { useSelector, useDispatch } from "react-redux";
 import "../App.css";
 
 function Hero({tableIndex}) {
-  const isOpen = useSelector((state) => state.sidebar.sidebarOpen);
+  const sidebarOpen = useSelector((state) => state.sidebar.sidebarOpen);
+  const billSiderOpen = useSelector((state) => state.sidebar.billSiderOpen);
   const tables = useSelector((state) => state.Tables);
   const dispatch = useDispatch();
 
@@ -47,7 +48,7 @@ function Hero({tableIndex}) {
   return (
     <div
       className={`p-3 transition-all duration-300 ${
-        isOpen ? "mr-[20rem]" : ""
+        sidebarOpen || billSiderOpen ? "mr-[20rem]" : ""
       }`}
     >
       {/* Category Container */}
