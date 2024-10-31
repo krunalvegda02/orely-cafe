@@ -2,32 +2,33 @@ import React from "react";
 import { CloseCircleOutlined } from "@ant-design/icons";
 import { closebillsider } from "../redux/Slices/SidebarSlice";
 import { useDispatch, useSelector } from "react-redux";
-import jsPDF from "jspdf";
 import { resetOrder } from "../redux/Slices/TableSlices";
+import jsPDF from "jspdf";
 
 const BillSider = ({ isOpen, index }) => {
   const dispatch = useDispatch();
   const tableDetails = useSelector((state) => state.tables);
-  const selectedTable = tableDetails[index];
+  const selectedTable = tableDetails[index];                  // *table index filter by table property of tsbleID
   //  console.log("Table Detakils: " + selectedTable );
 
   const closeButtonClick = () => {
     dispatch(closebillsider());
   };
 
+  // *On BUtton Click 
   const PassBill = () => {
     dispatch(resetOrder({tableIndex:index}));
     dispatch(closebillsider());
     downloadBill();
   };
 
+  // *Downloading Bill For Individual Table
   const downloadBill = () => {
     const doc = new jsPDF();
     const pageWidth = doc.internal.pageSize.width/2;
 
     doc.setFontSize(20);
     doc.text(`Orely Cafe:`, pageWidth / 2, 20, { align: "center" });
-
     doc.setFontSize(17);
     doc.text(`Bill for Table ${index + 1}`, 14, 30);
     doc.setFontSize(12);

@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+// ?Note: For menu index which changes twice on model table click and on tablesList table click
 const menuIndexSlice = createSlice({
     name: "menuIndex",
     initialState : 0,

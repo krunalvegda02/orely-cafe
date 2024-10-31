@@ -3,8 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 export const sidebarSlice = createSlice({
   name: "sidebar",
   initialState: {
-    sidebarOpen: false,
-    billSiderOpen: false,
+    sidebarOpen: false,              //? sidebar for tables
+    billSiderOpen: false,            //? individual table  Bill sidebar
   },
   reducers: {
     openSidebar: (state, action) => {
