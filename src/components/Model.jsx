@@ -74,23 +74,25 @@ function Modal({ isOpen, onClose }) {
             rules={[{ required: true }]}
           >
             {/* <Select placeholder="Select a Table" allowClear> */}
-            <div className="grid grid-cols-5 gap-2">
+            <div className="w-[25%]">
               
-              {Array.from({ length: 20 }, (_, i) => (
-                <button
-                  key={i}
-                  type="button"
-                  value={i}
-                  onClick={() => handleTableClick(i)}
-                  className={`py-2 px-4 rounded-lg font-semibold transition-colors duration-300 ${
-                    tableIndex === i
-                      ? "bg-green-500 text-white"
-                      : "bg-gray-200 text-gray-800"
-                  }`}
-                >
+              {
+              // Array.from({ length: 20 }, (_, i) => (
+              
+                <Select
+                placeholder="Select a Table"
+                onChange={handleTableClick}
+                value={tableIndex}
+              >
+                {Array.from({ length: 20 }, (_, i) => (
+                  <Select.Option
+                   key={i} 
+                   value={i}>
                   Table {i + 1}
-                </button>
-              ))}
+                  </Select.Option>
+                ))}
+              </Select>
+              }
             </div>
           </Form.Item>
           <Form.Item className="flex justify-end">

@@ -19,30 +19,30 @@ const BillSider = ({ isOpen, index }) => {
     dispatch(resetOrder({tableIndex:index}));
     dispatch(closebillsider());
     downloadBill();
-    console.log("Download BIll");
-   
-    // TODO: Download Bill
-    // TODO make total of orders  {It should be other function}
   };
 
   const downloadBill = () => {
     const doc = new jsPDF();
-    doc.setFontSize(20);
-    doc.text(`Orely Cafe`, 14, 20);
-    doc.setFontSize(20);
-    doc.text(`Bill for Table ${index + 1}`, 14, 20);
-    doc.setFontSize(12);
-    doc.text(`Customer Name: ${selectedTable.customerName}`, 14, 30);
-    doc.text(`Contact: +91 ${selectedTable.customerContact}`, 14, 40);
-    doc.text("Orders:", 14, 50);
+    const pageWidth = doc.internal.pageSize.width/2;
 
-    let yPosition = 60; // Initial Y position for the order items
+    doc.setFontSize(20);
+    doc.text(`Orely Cafe:`, pageWidth / 2, 20, { align: "center" });
+
+    doc.setFontSize(17);
+    doc.text(`Bill for Table ${index + 1}`, 14, 30);
+    doc.setFontSize(12);
+    doc.text(`Customer Name: ${selectedTable.customerName}`, 14, 40);
+    doc.text(`Contact: +91 ${selectedTable.customerContact}`, 14, 50);
+    doc.text("Orders:", 14, 60);
+
+    let yPosition = 70;
+     // Initial Y position for the order items
     orders.forEach((item) => {
-      doc.text(`${item.name} (x${item.quantity}) - ₹${item.price * item.quantity}`, 14, yPosition);
+      doc.text(`${item.name} (x${item.quantity}) - INR ${item.price * item.quantity}`, 14, yPosition);
       yPosition += 10; // Increase Y position for next item
     });
 
-    doc.text(`Total: ₹ ${totalAmount}`, 14, yPosition);
+    doc.text(`Total: INR ${totalAmount}`, 14, yPosition);
     doc.save(`bill_table_${index + 1}.pdf`);
   };
 
