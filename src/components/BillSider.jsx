@@ -2,6 +2,8 @@ import React from "react";
 import { CloseCircleOutlined } from "@ant-design/icons";
 import { closebillsider } from "../redux/Slices/SidebarSlice";
 import { useDispatch, useSelector } from "react-redux";
+import jsPDF from "jspdf";
+import { resetOrder } from "../redux/Slices/TableSlices";
 
 const BillSider = ({ isOpen, index }) => {
   const dispatch = useDispatch();
@@ -14,10 +16,36 @@ const BillSider = ({ isOpen, index }) => {
   };
 
   const PassBill = () => {
-    // TODO: Download Bill
+    dispatch(resetOrder({tableIndex:index}));
+    dispatch(closebillsider());
+    downloadBill();
     console.log("Download BIll");
+   
+    // TODO: Download Bill
     // TODO make total of orders  {It should be other function}
   };
+
+  const downloadBill = () => {
+    const doc = new jsPDF();
+    doc.setFontSize(20);
+    doc.text(`Orely Cafe`, 14, 20);
+    doc.setFontSize(20);
+    doc.text(`Bill for Table ${index + 1}`, 14, 20);
+    doc.setFontSize(12);
+    doc.text(`Customer Name: ${selectedTable.customerName}`, 14, 30);
+    doc.text(`Contact: +91 ${selectedTable.customerContact}`, 14, 40);
+    doc.text("Orders:", 14, 50);
+
+    let yPosition = 60; // Initial Y position for the order items
+    orders.forEach((item) => {
+      doc.text(`${item.name} (x${item.quantity}) - ₹${item.price * item.quantity}`, 14, yPosition);
+      yPosition += 10; // Increase Y position for next item
+    });
+
+    doc.text(`Total: ₹ ${totalAmount}`, 14, yPosition);
+    doc.save(`bill_table_${index + 1}.pdf`);
+  };
+
 
   const orders = selectedTable ? selectedTable.orders : [];
   const totalAmount = orders.reduce(
@@ -99,7 +127,7 @@ const BillSider = ({ isOpen, index }) => {
             <div> ₹ {totalAmount}</div>
           </div>
           <button
-            onClick={totalAmount}
+            onClick={PassBill}
             className="container bg-blue-600 h-10 rounded-2xl text-white font-medium text-lg my-5"
           >
             Charge Customer {`₹ ${totalAmount}`}

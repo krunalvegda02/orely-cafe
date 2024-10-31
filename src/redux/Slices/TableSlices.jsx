@@ -52,7 +52,7 @@ const tableSlice = createSlice({
     },
 
     resetOrder(state, action) {
-      const { tableIndex } = action.payload;
+      const  {tableIndex}  = action.payload;
       state[tableIndex].orders = [];
       state[tableIndex].customerName = null;
       state[tableIndex].customerContact = null;

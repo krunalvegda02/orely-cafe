@@ -75,6 +75,7 @@ function Modal({ isOpen, onClose }) {
           >
             {/* <Select placeholder="Select a Table" allowClear> */}
             <div className="grid grid-cols-5 gap-2">
+              
               {Array.from({ length: 20 }, (_, i) => (
                 <button
                   key={i}
