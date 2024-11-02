@@ -11,18 +11,3 @@
   .scrollbar-hide {
     scrollbar-width: none;
   }
-  
-  .item-name {
-    max-width: 200px; /* Adjust this value as necessary */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .order-item {
-    height: 60px; /* Set a fixed height based on your design */
-    display: flex;
-    align-items: center; /* Center align items vertically */
-    justify-content: space-between; /* Maintain space between items */
-  }
-  

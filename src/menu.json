@@ -1,199 +1,1049 @@
 {
-    "menu": [
-      {
-        "category": "Hot Beverages",
-        "items": [
-          {
-            "name": "Affogato",
-            "description": "A shot of hot espresso poured over a scoop of vanilla ice cream, blending the richness of both for a decadent dessert-drink experience.",
-            "price": 250
-          },
-          {
-            "name": "Hazelnut Cappuccino",
-            "description": "A classic cappuccino infused with the sweet, nutty flavor of hazelnut, topped with frothy milk.",
-            "price": 180
-          },
-          {
-            "name": "Caramel Cappuccino",
-            "description": "A delicious twist on the cappuccino, sweetened with rich caramel syrup and finished with creamy foam.",
-            "price": 180
-          },
-          {
-            "name": "Vanilla Cappuccino",
-            "description": "The warm flavors of vanilla elevate this cappuccino, offering a smooth and comforting taste.",
-            "price": 180
-          },
-          {
-            "name": "Hazelnut Latte",
-            "description": "A smooth latte infused with hazelnut flavor, topped with frothy milk.",
-            "price": 180
-          }
-        ]
-      },
-      {
-        "category": "Israeli Dishes",
-        "items": [
-          {
-            "name": "Shakshuka",
-            "description": "A flavorful dish of poached eggs in a rich and spicy tomato sauce with peppers, onions, and aromatic spices. Served with a side of fresh bread for dipping.",
-            "price": 450
-          },
-          {
-            "name": "Hummus Pita",
-            "description": "Creamy, smooth hummus served with warm, fluffy pita bread. A perfect combination of flavors from chickpeas, tahini, lemon, and garlic.",
-            "price": 300
-          },
-          {
-            "name": "Falafel Platter",
-            "description": "Crispy on the outside, soft on the inside—these golden-brown chickpea fritters are served with a side of hummus, salad, and pita.",
-            "price": 400
-          }
-        ]
-      },
-      {
-        "category": "Cold Brew",
-        "items": [
-          {
-            "name": "Iced Cappuccino",
-            "description": "A chilled version of the classic cappuccino, with a balance of espresso, cold milk, and topped with frothy foam, served over ice.",
-            "price": 200
-          },
-          {
-            "name": "Iced Latte",
-            "description": "Smooth espresso mixed with cold milk and served over ice for a creamy, refreshing drink.",
-            "price": 200
-          },
-          {
-            "name": "Iced Americano",
-            "description": "A simple, strong coffee drink made by pouring espresso over ice and diluting it with cold water, perfect for those who love a bold taste.",
-            "price": 180
-          },
-          {
-            "name": "Iced Caramel Latte",
-            "description": "A chilled blend of espresso, milk, and caramel syrup, served over ice for a sweet and creamy coffee experience.",
-            "price": 240
-          },
-          {
-            "name": "Iced Vanilla Latte",
-            "description": "A smooth iced latte blended with the sweet and comforting flavor of vanilla.",
-            "price": 240
-          }
-        ]
-      },
-      {
-        "category": "Frappé",
-        "items": [
-          {
-            "name": "Hazelnut Frappé",
-            "description": "A creamy, blended iced coffee infused with the sweet and nutty flavor of hazelnut, topped with whipped cream for an indulgent treat.",
-            "price": 250
-          },
-          {
-            "name": "Café Frappé",
-            "description": "A classic iced coffee blended to perfection, offering a smooth, rich taste of coffee with a refreshing chill, topped with whipped cream.",
-            "price": 220
-          },
-          {
-            "name": "Irish Frappé",
-            "description": "A rich, blended iced coffee with the smooth flavor of Irish cream (non-alcoholic), offering a perfect balance of sweetness and coffee kick.",
-            "price": 250
-          },
-          {
-            "name": "Caramel Frappé",
-            "description": "A luscious blend of cold coffee, caramel syrup, and milk, topped with whipped cream and drizzled with caramel sauce for an extra sweet finish.",
-            "price": 250
-          },
-          {
-            "name": "Vanilla Frappé",
-            "description": "A smooth and creamy frappé blended with vanilla flavor, topped with whipped cream for a classic indulgence.",
-            "price": 250
-          }
-        ]
-      },
-      {
-        "category": "Mojitos",
-        "items": [
-          {
-            "name": "Watermelon Mojito",
-            "description": "A refreshing blend of fresh watermelon juice, mint leaves, lime, and a splash of soda, making it a perfect summer cooler.",
-            "price": 180
-          },
-          {
-            "name": "Blue Lagoon Mojito",
-            "description": "A vibrant, blue mojito featuring the zesty flavors of lime and mint, with a twist of blue curaçao (non-alcoholic) for a tropical escape.",
-            "price": 180
-          },
-          {
-            "name": "Green Gin Cooler",
-            "description": "A crisp and refreshing gin-based cooler mixed with mint, lime, and cucumber, topped with soda for a light, herbaceous taste.",
-            "price": 180
-          },
-          {
-            "name": "Peach Mojito",
-            "description": "A fruity twist on the classic mojito, featuring sweet peach syrup, fresh mint, lime, and soda for a light and fizzy drink.",
-            "price": 180
-          },
-          {
-            "name": "Mint Mojito",
-            "description": "A refreshing mojito made with mint, lime, sugar, and soda water, perfect for a cooling experience.",
-            "price": 180
-          }
-        ]
-      },
-      {
-        "category": "Iced Teas & Lemonades",
-        "items": [
-          {
-            "name": "Peach Iced Tea",
-            "description": "A sweet, fruity iced tea infused with the flavor of ripe peaches, offering a refreshing and light summer cooler.",
-            "price": 150
-          },
-          {
-            "name": "Lemon Iced Tea",
-            "description": "A classic, chilled tea with a hint of lemon for a perfectly refreshing drink on a warm day.",
-            "price": 150
-          },
-          {
-            "name": "Lemonade",
-            "description": "A zesty and tangy homemade lemonade made with freshly squeezed lemons, sugar, and chilled water.",
-            "price": 120
-          },
-          {
-            "name": "Mint Lemonade",
-            "description": "A refreshing twist on the classic lemonade, with a burst of fresh mint and lime, offering a cool and tangy experience.",
-            "price": 140
-          }
-        ]
-      },
-      {
-        "category": "Shakes",
-        "items": [
-          {
-            "name": "KitKat Shake",
-            "description": "A rich and creamy shake blended with crunchy KitKat bars, topped with whipped cream and chocolate drizzle for an indulgent treat.",
-            "price": 240
-          },
-          {
-            "name": "Oreo Shake",
-            "description": "A delicious shake made with Oreo cookies, milk, and ice cream, topped with whipped cream and cookie crumbs.",
-            "price": 230
-          },
-          {
-            "name": "Vanilla Shake",
-            "description": "A classic, creamy vanilla shake made with rich vanilla ice cream and milk, perfect for a smooth and refreshing experience.",
-            "price": 200
-          },
-          {
-            "name": "Strawberry Shake",
-            "description": "A creamy strawberry shake made with fresh strawberries and ice cream, topped with whipped cream.",
-            "price": 220
-          },
-          {
-            "name": "Chocolate Shake",
-            "description": "A decadent shake made with creamy chocolate ice cream, topped with whipped cream and drizzled with chocolate syrup.",
-            "price": 220
-          }
-        ]
-      }
-    ]
-  }
+  "menu": [
+    {
+      "category": "Hot Beverages",
+      "items": [
+        {
+          "name": "Affogato",
+          "description": "A shot of hot espresso poured over a scoop of vanilla ice cream, blending the richness of both for a decadent dessert-drink experience.",
+          "price": 250
+        },
+        {
+          "name": "Hazelnut Cappuccino",
+          "description": "A classic cappuccino infused with the sweet, nutty flavor of hazelnut, topped with frothy milk.",
+          "price": 180
+        },
+        {
+          "name": "Caramel Cappuccino",
+          "description": "A delicious twist on the cappuccino, sweetened with rich caramel syrup and finished with creamy foam.",
+          "price": 180
+        },
+        {
+          "name": "Vanilla Cappuccino",
+          "description": "The warm flavors of vanilla elevate this cappuccino, offering a smooth and comforting taste.",
+          "price": 180
+        },
+        {
+          "name": "Hazelnut Latte",
+          "description": "A smooth latte with a hint of hazelnut, perfect for those who enjoy a nutty sweetness in their coffee.",
+          "price": 200
+        },
+        {
+          "name": "Caramel Latte",
+          "description": "Rich caramel syrup combined with espresso and steamed milk to create a delightful, creamy treat.",
+          "price": 200
+        },
+        {
+          "name": "Vanilla Latte",
+          "description": "A velvety latte with a subtle hint of vanilla, for those who love a mellow, sweet flavor.",
+          "price": 200
+        },
+        {
+          "name": "Signature Hot Chocolate",
+          "description": "Indulgent hot chocolate made from rich cocoa, topped with whipped cream and a sprinkle of chocolate shavings.",
+          "price": 180
+        },
+        {
+          "name": "Americano",
+          "description": "A simple yet bold drink, made by diluting espresso with hot water for a smooth, rich flavor.",
+          "price": 140
+        },
+        {
+          "name": "Cappuccino",
+          "description": "A classic Italian coffee drink with equal parts espresso, steamed milk, and frothy foam.",
+          "price": 150
+        },
+        {
+          "name": "Cafe Latte",
+          "description": "A perfect balance of espresso and steamed milk with a light layer of foam, offering a smooth and mild flavor.",
+          "price": 170
+        },
+        {
+          "name": "Flat White",
+          "description": "A creamy and strong espresso-based drink with a fine, velvety texture of steamed milk.",
+          "price": 180
+        },
+        {
+          "name": "Café Mocha",
+          "description": "A luscious blend of espresso, hot chocolate, and steamed milk, topped with whipped cream.",
+          "price": 180
+        },
+        {
+          "name": "Espresso Single Shot",
+          "description": "A simple yet bold drink, made by diluting espresso with hot water for a smooth, rich flavor.",
+          "price": 80
+        },
+        {
+          "name": "Espresso Double Shot",
+          "description": "A simple yet bold drink, made by diluting espresso with hot water for a smooth, rich flavor.",
+          "price": 120
+        }
+      ]
+    },
+    {
+      "category": "Israeli Dishes",
+      "items": [
+        {
+          "name": "Shakshuka",
+          "description": "A flavorful dish of poached eggs in a rich and spicy tomato sauce with peppers, onions, and aromatic spices. Served with a side of fresh bread for dipping.",
+          "price": 450
+        },
+        {
+          "name": "Hummus Pita",
+          "description": "Creamy, smooth hummus served with warm, fluffy pita bread. A perfect combination of flavors from chickpeas, tahini, lemon, and garlic.",
+          "price": 300
+        },
+        {
+          "name": "Falafel Platter",
+          "description": "Crispy on the outside, soft on the inside—these golden-brown chickpea fritters are served with a side of hummus, salad, and pita.",
+          "price": 400
+        }
+      ]
+    },
+    {
+      "category": "Cold Brew",
+      "items": [
+        {
+          "name": "Iced Cappuccino",
+          "description": "A chilled version of the classic cappuccino, with a balance of espresso, cold milk, and topped with frothy foam, served over ice.",
+          "price": 200
+        },
+        {
+          "name": "Iced Latte",
+          "description": "Smooth espresso mixed with cold milk and served over ice for a creamy, refreshing drink.",
+          "price": 200
+        },
+        {
+          "name": "Iced Americano",
+          "description": "A simple, strong coffee drink made by pouring espresso over ice and diluting it with cold water, perfect for those who love a bold taste.",
+          "price": 180
+        },
+        {
+          "name": "Iced Caramel Latte",
+          "description": "A chilled blend of espresso, milk, and caramel syrup, served over ice for a sweet and creamy coffee experience.",
+          "price": 240
+        },
+        {
+          "name": "Iced Vanilla Latte",
+          "description": "A smooth and sweet iced coffee drink with a touch of vanilla, perfect for a cool and creamy coffee fix.",
+          "price": 230
+        },
+        {
+          "name": "Iced Mocha",
+          "description": "A delicious combination of espresso, cold milk, and rich chocolate syrup, served over ice and topped with whipped cream.",
+          "price": 250
+        },
+        {
+          "name": "Iced Matcha Latte",
+          "description": "A creamy and refreshing drink made from finely ground green tea powder, cold milk, and a touch of sweetness. A perfect pick-me-up!",
+          "price": 240
+        },
+        {
+          "name": "Iced Hazelnut Latte",
+          "description": "A refreshing take on a latte, with smooth hazelnut flavor and creamy milk poured over ice.",
+          "price": 230
+        },
+        {
+          "name": "Cold Coffee",
+          "description": "A refreshing take on a latte, with smooth hazelnut flavor and creamy milk poured over ice.",
+          "price": 180
+        },
+        {
+          "name": "Cold Coffee with ice cream",
+          "description": "A refreshing take on a latte, with smooth hazelnut flavor and creamy milk poured over ice.",
+          "price": 220
+        }
+      ]
+    },
+    {
+      "category": "Frappé",
+      "items": [
+        {
+          "name": "Hazelnut Frappé",
+          "description": "A creamy, blended iced coffee infused with the sweet and nutty flavor of hazelnut, topped with whipped cream for an indulgent treat.",
+          "price": 250
+        },
+        {
+          "name": "Café Frappé",
+          "description": "A classic iced coffee blended to perfection, offering a smooth, rich taste of coffee with a refreshing chill, topped with whipped cream.",
+          "price": 220
+        },
+        {
+          "name": "Irish Frappé",
+          "description": "A rich, blended iced coffee with the smooth flavor of Irish cream (non-alcoholic), offering a perfect balance of sweetness and coffee kick.",
+          "price": 250
+        },
+        {
+          "name": "Caramel Frappé",
+          "description": "A luscious blend of cold coffee, caramel syrup, and milk, topped with whipped cream and drizzled with caramel sauce for an extra sweet finish.",
+          "price": 250
+        },
+        {
+          "name": "Vanilla Frappé",
+          "description": "A cool and creamy drink blended with rich vanilla syrup and coffee, topped with a generous amount of whipped cream.",
+          "price": 250
+        }
+      ]
+    },
+    {
+      "category": "Mojitos",
+      "items": [
+        {
+          "name": "Watermelon Mojito",
+          "description": "A refreshing blend of fresh watermelon juice, mint leaves, lime, and a splash of soda, making it a perfect summer cooler.",
+          "price": 180
+        },
+        {
+          "name": "Blue Lagoon Mojito",
+          "description": "A vibrant, blue mojito featuring the zesty flavors of lime and mint, with a twist of blue curaçao (non-alcoholic) for a tropical escape.",
+          "price": 180
+        },
+        {
+          "name": "Green Gin Cooler",
+          "description": "A crisp and refreshing gin-based cooler mixed with mint, lime, and cucumber, topped with soda for a light, herbaceous taste.",
+          "price": 180
+        },
+        {
+          "name": "Peach Mojito",
+          "description": "A fruity twist on the classic mojito, featuring sweet peach syrup, fresh mint, lime, and soda for a light and fizzy drink.",
+          "price": 180
+        },
+        {
+          "name": "Mint Mojito",
+          "description": "A classic mojito with a strong minty kick, combined with lime and soda, making it a refreshing and tangy drink.",
+          "price": 180
+        },
+        {
+          "name": "Virgin Mojito",
+          "description": "A non-alcoholic version of the mojito, made with fresh mint, lime, and soda for a refreshing burst of flavor.",
+          "price": 180
+        }
+      ]
+    },
+    {
+      "category": "Shakes",
+      "items": [
+        {
+          "name": "KitKat Shake",
+          "description": "A rich and creamy shake blended with crunchy KitKat bars, topped with whipped cream and chocolate drizzle for an indulgent treat.",
+          "price": 240
+        },
+        {
+          "name": "Oreo Shake",
+          "description": "A delicious shake made with Oreo cookies, milk, and ice cream, topped with whipped cream and cookie crumbs.",
+          "price": 230
+        },
+        {
+          "name": "Vanilla Shake",
+          "description": "A classic, creamy vanilla shake made with rich vanilla ice cream and milk, perfect for a smooth and refreshing experience.",
+          "price": 200
+        },
+        {
+          "name": "Chocolate Shake",
+          "description": "A decadent shake made with creamy chocolate ice cream, topped with whipped cream and drizzled with chocolate syrup.",
+          "price": 220
+        },
+        {
+          "name": "Strawberry Shake",
+          "description": "A fruity and creamy shake made with fresh strawberries and vanilla ice cream, topped with whipped cream.",
+          "price": 210
+        },
+        {
+          "name": "Nutella Shake",
+          "description": "A decadent shake made with creamy chocolate ice cream, topped with whipped cream and drizzled with chocolate syrup.",
+          "price": 250
+        }
+      ]
+    },
+    {
+      "category": "Tea",
+      "items": [
+        {
+          "name": "Masala Tea",
+          "description": "A traditional Indian spiced tea made with black tea, a blend of warming spices, and milk for a rich and flavorful experience.",
+          "price": 40
+        },
+        {
+          "name": "Ginger Tea",
+          "description": "A soothing tea brewed with fresh ginger, offering a warm and spicy flavor that’s perfect for relaxation.",
+          "price": 40
+        },
+        {
+          "name": "Mint Tea",
+          "description": "A refreshing tea made with fresh mint leaves, offering a cool and invigorating taste.",
+          "price": 70
+        },
+        {
+          "name": "Green Tea",
+          "description": "A light and healthy tea with subtle earthy flavors, packed with antioxidants, perfect for a calming experience.",
+          "price": 80
+        },
+        {
+          "name": "Ginger Lemon Honey Tea",
+          "description": "A refreshing and soothing blend of ginger, lemon, and honey, perfect for a boost of warmth and wellness.",
+          "price": 80
+        },
+        {
+          "name": "Lemon Tea",
+          "description": "A simple, zesty tea infused with fresh lemon juice, offering a bright and refreshing taste.",
+          "price": 60
+        },
+        {
+          "name": "Black Tea",
+          "description": "A classic, robust tea brewed to perfection for a bold and energizing experience.",
+          "price": 50
+        },
+        {
+          "name": "Hot Milk",
+          "description": "A simple and comforting cup of hot milk, perfect for pairing with a snack or as a soothing drink on its own.",
+          "price": 50
+        }
+      ]
+    },
+    {
+      "category": "Iced Teas & Lemonades",
+      "items": [
+        {
+          "name": "Peach Iced Tea",
+          "description": "A sweet, fruity iced tea infused with the flavor of ripe peaches, offering a refreshing and light summer cooler.",
+          "price": 150
+        },
+        {
+          "name": "Lemon Iced Tea",
+          "description": "A classic, chilled tea with a hint of lemon for a perfectly refreshing drink on a warm day.",
+          "price": 150
+        },
+        {
+          "name": "Lemonade",
+          "description": "A zesty and tangy homemade lemonade made with freshly squeezed lemons, sugar, and chilled water.",
+          "price": 120
+        },
+        {
+          "name": "Mint Lemonade",
+          "description": "A refreshing twist on the classic lemonade, with a burst of fresh mint and lime, offering a cool and tangy experience.",
+          "price": 140
+        }
+      ]
+    },
+    {
+      "category": "Eggs",
+      "items": [
+        {
+          "name": "Boiled Eggs",
+          "description": "Two perfectly boiled eggs, served with salt and pepper on the side for a simple, protein-packed breakfast.",
+          "price": 80
+        },
+        {
+          "name": "Omelette",
+          "description": "A classic plain omelette, light and fluffy, served with buttered toast.",
+          "price": 120
+        },
+        {
+          "name": "Masala Omelette",
+          "description": "An Indian-style omelette with onions, tomatoes, green chilies, and spices, served with buttered toast.",
+          "price": 140
+        },
+        {
+          "name": "Cheese Omelette",
+          "description": "A fluffy omelette filled with melted cheese, served with buttered toast for a rich and satisfying meal.",
+          "price": 150
+        },
+        {
+          "name": "Cheese and Mushroom Omelette",
+          "description": "A delicious omelette stuffed with sautéed mushrooms and gooey melted cheese, served with buttered toast.",
+          "price": 180
+        },
+        {
+          "name": "Scrambled Eggs",
+          "description": "Soft, fluffy scrambled eggs, seasoned with salt and pepper, served with buttered toast.",
+          "price": 160
+        },
+        {
+          "name": "Sunny Side Up",
+          "description": "Two perfectly fried eggs with the yolk intact, served with toast for dipping.",
+          "price": 150
+        }
+      ]
+    },
+    {
+      "category": "Soft Drinks",
+      "items": [
+        {
+          "name": "Water",
+          "description": "Refreshing bottled water to keep you hydrated.",
+          "price": 30
+        },
+        {
+          "name": "Soda",
+          "description": "Chilled soda water, perfect for mixing with other beverages or enjoying on its own.",
+          "price": 40
+        },
+        {
+          "name": "Soft Drinks",
+          "description": "A variety of popular soft drinks (Coca-Cola, Sprite, Fanta, etc.) served chilled.",
+          "price": 60
+        }
+      ]
+    },
+    {
+      "category": "Soups",
+      "items": [
+        {
+          "name": "Tomato Soup",
+          "description": "A classic creamy tomato soup made with ripe tomatoes, blended with spices and garnished with croutons.",
+          "price": 150
+        },
+        {
+          "name": "Hot and Sour Soup",
+          "description": "A tangy and spicy soup made with a mix of vegetables, soy sauce, and vinegar, giving it the perfect balance of flavors.",
+          "price": 160
+        },
+        {
+          "name": "Manchow Soup",
+          "description": "A flavorful Chinese-style soup with mixed vegetables, soy sauce, and topped with crispy fried noodles.",
+          "price": 180
+        },
+        {
+          "name": "Corn and Coriander Soup",
+          "description": "A light and refreshing soup made with sweet corn and fresh coriander leaves, offering a delicious mix of flavors.",
+          "price": 160
+        },
+        {
+          "name": "Chicken Hot and Sour Soup",
+          "description": "A spicy and tangy chicken soup with shredded chicken, vegetables, and a blend of hot and sour flavors.",
+          "price": 200
+        },
+        {
+          "name": "Chicken Manchow Soup",
+          "description": "A hearty soup with shredded chicken, vegetables, soy sauce, and topped with crunchy fried noodles.",
+          "price": 210
+        }
+      ]
+    },
+    {
+      "category": "All Day BreakFast",
+      "items": [
+        {
+          "name": "Blueberry Pancake",
+          "description": "Fluffy pancakes topped with fresh blueberries and a drizzle of syrup, offering a sweet and tangy start to your day.",
+          "price": 260
+        },
+        {
+          "name": "Nutella Pancake",
+          "description": "Soft, warm pancakes generously spread with Nutella, making for a rich and indulgent breakfast.",
+          "price": 280
+        },
+        {
+          "name": "Honey Pancake",
+          "description": "Pancakes drizzled with honey for a naturally sweet and healthy option.",
+          "price": 240
+        },
+        {
+          "name": "Maple Syrup Pancake",
+          "description": "Classic pancakes topped with pure maple syrup, perfect for those who love traditional flavors.",
+          "price": 220
+        },
+        {
+          "name": "Aloo Pyaz Paratha",
+          "description": "A crispy, stuffed flatbread filled with spiced mashed potatoes and onions, served with curd and pickle.",
+          "price": 120
+        },
+        {
+          "name": "Paneer Paratha",
+          "description": "A flavorful paratha stuffed with spiced paneer (Indian cottage cheese), served with curd and pickle.",
+          "price": 150
+        },
+        {
+          "name": "Mix Veg Paratha",
+          "description": "A hearty paratha filled with a mix of spiced vegetables, perfect for a wholesome breakfast.",
+          "price": 160
+        },
+        {
+          "name": "Gobi Paratha",
+          "description": "A delicious paratha stuffed with spiced cauliflower, served with curd and pickle.",
+          "price": 140
+        },
+        {
+          "name": "Poha",
+          "description": "A light and fluffy flattened rice dish cooked with onions, peanuts, and mild spices, perfect for a healthy start.",
+          "price": 150
+        },
+        {
+          "name": "Besan Chilla",
+          "description": "A savory pancake made from gram flour and spices, served with chutney for a nutritious and protein-packed meal.",
+          "price": 120
+        },
+        {
+          "name": "Butter Toast",
+          "description": "Crispy toast spread with creamy butter for a simple yet comforting breakfast.",
+          "price": 50
+        },
+        {
+          "name": "Jam Toast",
+          "description": "Golden toast slathered with sweet fruit jam, perfect for a quick and tasty start.",
+          "price": 60
+        },
+        {
+          "name": "Nutella Toast",
+          "description": "Toasted bread generously spread with Nutella for a sweet, chocolatey treat.",
+          "price": 80
+        },
+        {
+          "name": "Peanut Butter Toast",
+          "description": "A crunchy toast topped with creamy peanut butter, perfect for a protein-packed snack.",
+          "price": 70
+        },
+        {
+          "name": "Puri Bhaji",
+          "description": "A classic Indian breakfast of soft, deep-fried puris served with a spiced potato curry (bhaji).",
+          "price": 200
+        }
+      ]
+    },
+    {
+      "category": "Pasta",
+      "items": [
+        {
+          "name": "Alfredo Pasta",
+          "description": "A creamy, rich pasta dish made with a classic Alfredo sauce of butter, cream, and Parmesan cheese, served with your choice of penne or fettuccine.",
+          "price": 300
+        },
+        {
+          "name": "Mac and Cheese",
+          "description": "A comforting bowl of macaroni pasta coated in a smooth, creamy cheese sauce, baked to golden perfection.",
+          "price": 300
+        },
+        {
+          "name": "Arrabiata Pasta",
+          "description": "A spicy tomato-based pasta made with garlic, red chilies, and fresh herbs, served with penne for a fiery kick.",
+          "price": 300
+        },
+        {
+          "name": "Classic Pink Sauce Pasta",
+          "description": "A delightful combination of creamy Alfredo and tangy tomato sauces, creating a smooth and balanced pink sauce, served with penne or fettuccine.",
+          "price": 300
+        },
+        {
+          "name": "Aglio Olio Basilico",
+          "description": "A light and simple pasta dish made with olive oil, garlic, fresh basil, and a sprinkle of chili flakes, offering a refreshing and aromatic flavor.",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "category": "Chinese",
+      "items": [
+        {
+          "name": "Veg Noodles",
+          "description": "Stir-fried noodles with fresh vegetables, seasoned with soy sauce and spices for a simple, flavorful meal.",
+          "price": 220
+        },
+        {
+          "name": "Veg Hakka Noodles",
+          "description": "Thin noodles stir-fried with fresh vegetables in a light soy-based sauce, offering a flavorful and crunchy texture.",
+          "price": 230
+        },
+        {
+          "name": "Chilly Garlic Noodles",
+          "description": "Spicy noodles tossed with garlic, red chilies, and vegetables for a fiery, aromatic kick.",
+          "price": 250
+        },
+        {
+          "name": "Chicken Noodles",
+          "description": "Stir-fried noodles with marinated chicken pieces and vegetables, flavored with soy sauce and spices.",
+          "price": 260
+        },
+        {
+          "name": "Egg Noodles",
+          "description": "Egg noodles stir-fried with vegetables and soy sauce, offering a savory and satisfying dish.",
+          "price": 240
+        },
+        {
+          "name": "Veg Fried Rice",
+          "description": "Classic fried rice with mixed vegetables, soy sauce, and mild spices for a perfect side or standalone dish.",
+          "price": 220
+        },
+        {
+          "name": "Paneer Fried Rice",
+          "description": "Fried rice with soft paneer cubes and vegetables, adding a protein-packed twist to this popular dish.",
+          "price": 240
+        },
+        {
+          "name": "Chicken Fried Rice",
+          "description": "Fried rice with tender chicken pieces and vegetables, tossed in a flavorful sauce.",
+          "price": 260
+        },
+        {
+          "name": "Egg Fried Rice",
+          "description": "Classic fried rice with scrambled eggs and vegetables, offering a savory, wholesome meal.",
+          "price": 250
+        },
+        {
+          "name": "Veg Manchurian",
+          "description": "Crispy vegetable balls tossed in a spicy and tangy sauce, perfect for a snack or starter.",
+          "price": 240
+        },
+        {
+          "name": "Chicken Manchurian",
+          "description": "Juicy chicken pieces coated in a spicy Manchurian sauce, served as a dry starter.",
+          "price": 260
+        },
+        {
+          "name": "Chilly Paneer",
+          "description": "Paneer cubes stir-fried with bell peppers and onions in a spicy, tangy sauce.",
+          "price": 250
+        },
+        {
+          "name": "Chilly Chicken",
+          "description": "Crispy chicken tossed with bell peppers and onions in a spicy, soy-based sauce.",
+          "price": 300
+        },
+        {
+          "name": "Honey Chilly Potato",
+          "description": "Crispy potato fries tossed in a sweet and spicy honey-chili sauce.",
+          "price": 220
+        },
+        {
+          "name": "Chilly Mushroom",
+          "description": "Mushrooms stir-fried with bell peppers and onions in a spicy, soy-based sauce.",
+          "price": 280
+        },
+        {
+          "name": "Lemon Chicken",
+          "description": "Tender chicken pieces tossed in a tangy lemon sauce, offering a refreshing and zesty flavor.",
+          "price": 280
+        },
+        {
+          "name": "Crispy Veggies",
+          "description": "Crispy fried vegetables coated in a light batter and seasoned with spices for a crunchy snack.",
+          "price": 220
+        },
+        {
+          "name": "Veg Momos",
+          "description": "Steamed dumplings filled with spiced vegetables, served with a tangy dipping sauce.",
+          "price": 180
+        },
+        {
+          "name": "Chicken Momos",
+          "description": "Steamed dumplings filled with juicy chicken and spices, served with a tangy dipping sauce.",
+          "price": 220
+        }
+      ]
+    },
+    {
+      "category": "Pizza",
+      "items": [
+        {
+          "name": "Margherita Pizza",
+          "description": "A classic pizza topped with fresh tomato sauce, mozzarella cheese, and a sprinkle of fresh basil.",
+          "price": 500
+        },
+        {
+          "name": "Farmhouse Pizza",
+          "description": "Loaded with fresh vegetables like bell peppers, onions, sweet corn, tomatoes, and mushrooms, topped with mozzarella cheese.",
+          "price": 550
+        },
+        {
+          "name": "Paneer Tikka Pizza",
+          "description": "Spiced paneer tikka chunks, onions, and bell peppers on a pizza base with a layer of rich tomato sauce and mozzarella cheese.",
+          "price": 600
+        },
+        {
+          "name": "Tandoori Chicken Pizza",
+          "description": "A smoky, flavorful pizza with marinated tandoori chicken, onions, and bell peppers, topped with mozzarella cheese.",
+          "price": 650
+        },
+        {
+          "name": "BBQ Chicken Pizza",
+          "description": "Tender BBQ chicken, onions, and bell peppers with a tangy BBQ sauce base, topped with mozzarella cheese.",
+          "price": 620
+        },
+        {
+          "name": "Golden Crown Pizza",
+          "description": "A luxurious pizza topped with a mix of mozzarella and cheddar cheese, corn, bell peppers, and olives for a delightful crunch.",
+          "price": 530
+        }
+      ]
+    },
+    {
+      "category": "Sandwiches and Burgers",
+      "items": [
+        {
+          "name": "Veg Grilled Sandwich",
+          "description": "A healthy grilled sandwich filled with fresh vegetables, cheese, and spices, toasted to perfection.",
+          "price": 200
+        },
+        {
+          "name": "Tandoori Paneer Sandwich",
+          "description": "Spiced tandoori paneer stuffed in a sandwich, grilled until crispy and golden brown.",
+          "price": 220
+        },
+        {
+          "name": "Tandoori Chicken Sandwich",
+          "description": "Juicy, marinated tandoori chicken in a grilled sandwich, bursting with smoky flavors.",
+          "price": 250
+        },
+        {
+          "name": "Cheese Chilly Toast",
+          "description": "An open-faced toast loaded with melted cheese and spicy green chilies for a zesty snack.",
+          "price": 150
+        },
+        {
+          "name": "Classic Club Sandwich",
+          "description": "A triple-layer sandwich with a mix of veggies, cheese, and eggs (optional), served with fries.",
+          "price": 280
+        },
+        {
+          "name": "Mushroom Sandwich",
+          "description": "A delicious sandwich stuffed with sautéed mushrooms, herbs, and melted cheese.",
+          "price": 220
+        },
+        {
+          "name": "Tomato and Cheese Sandwich",
+          "description": "A simple yet tasty combination of fresh tomatoes and melted cheese, grilled to perfection.",
+          "price": 220
+        },
+        {
+          "name": "Cottage Cheese Burger",
+          "description": "A flavorful burger with a spicy grilled cottage cheese patty, served with lettuce, tomato, and mayo.",
+          "price": 280
+        },
+        {
+          "name": "Grilled Chicken Burger",
+          "description": "A juicy, grilled chicken patty served in a soft bun with lettuce, tomato, and a special sauce.",
+          "price": 300
+        },
+        {
+          "name": "Paneer Wrap",
+          "description": "Soft paratha filled with spiced paneer and vegetables, rolled up for a delicious grab-and-go option.",
+          "price": 240
+        },
+        {
+          "name": "Veg Wrap",
+          "description": "A wholesome roll filled with spiced vegetables, wrapped in a soft paratha.",
+          "price": 220
+        },
+        {
+          "name": "Chicken Wrap",
+          "description": "A delicious roll packed with marinated chicken, vegetables, and spices, wrapped in a soft paratha.",
+          "price": 280
+        },
+        {
+          "name": "Paneer BBQ Sandwich",
+          "description": "Grilled paneer with a smoky BBQ sauce, stuffed in a sandwich and toasted to perfection.",
+          "price": 250
+        },
+        {
+          "name": "Chicken BBQ Sandwich",
+          "description": "Grilled chicken pieces with tangy BBQ sauce, served in a crispy grilled sandwich.",
+          "price": 280
+        },
+        {
+          "name": "Garlic Bread",
+          "description": "Warm, toasted bread flavored with butter, garlic, and herbs—simple yet satisfying.",
+          "price": 180
+        },
+        {
+          "name": "Cheese Garlic Bread",
+          "description": "A classic garlic bread topped with melted cheese for an extra indulgent twist.",
+          "price": 200
+        }
+      ]
+    },
+    {
+      "category": "Muchies",
+      "items": [
+        {
+          "name": "French Fries",
+          "description": "Classic golden fries, crispy on the outside and soft on the inside, served with ketchup or your choice of dip.",
+          "price": 180
+        },
+        {
+          "name": "Peri Peri Fries",
+          "description": "Crispy fries tossed in spicy and tangy Peri Peri seasoning, perfect for a flavorful kick.",
+          "price": 220
+        },
+        {
+          "name": "Cheesy Fries",
+          "description": "Golden fries topped with melted cheese for a gooey and indulgent snack.",
+          "price": 250
+        },
+        {
+          "name": "Veg Pakora",
+          "description": "Crispy deep-fried vegetable fritters, lightly spiced and served with chutney.",
+          "price": 200
+        },
+        {
+          "name": "Cheesy Overloaded Nachos",
+          "description": "Crispy nachos loaded with melted cheese, jalapeños, salsa, and sour cream for a flavorful and filling treat.",
+          "price": 220
+        },
+        {
+          "name": "Peanut Masala",
+          "description": "A crunchy and spicy mix of roasted peanuts tossed with onions, tomatoes, chilies, and spices, perfect as a quick snack.",
+          "price": 150
+        },
+        {
+          "name": "Masala Papad",
+          "description": "Crispy papad topped with a tangy mix of onions, tomatoes, and chaat masala, perfect as a light appetizer.",
+          "price": 80
+        },
+        {
+          "name": "Popcorn",
+          "description": "Light and fluffy popcorn seasoned with salt or butter, perfect for munching.",
+          "price": 90
+        }
+      ]
+    },
+    {
+      "category": "Starters",
+      "items": [
+        {
+          "name": "Paneer Tikka",
+          "description": "Soft paneer cubes marinated in spiced yogurt and grilled to perfection in a tandoor, served with mint chutney.",
+          "price": 260
+        },
+        {
+          "name": "Veg Kabab",
+          "description": "A flavorful mix of spiced vegetables shaped into patties and grilled until golden, served with mint chutney.",
+          "price": 240
+        },
+        {
+          "name": "Afghani Chicken",
+          "description": "Juicy chicken pieces marinated in a creamy, mildly spiced yogurt mixture and grilled to perfection in the tandoor.",
+          "price": 350
+        },
+        {
+          "name": "Half Tandoori Chicken",
+          "description": "A classic dish with chicken marinated in spiced yogurt and cooked in the tandoor until smoky and tender.",
+          "price": 320
+        },
+        {
+          "name": "Full Tandoori Chicken",
+          "description": "A classic dish with chicken marinated in spiced yogurt and cooked in the tandoor until smoky and tender.",
+          "price": 580
+        },
+        {
+          "name": "Chicken Seekh Kabab",
+          "description": "Minced chicken mixed with spices, shaped onto skewers, and grilled in the tandoor for a smoky, juicy bite.",
+          "price": 320
+        },
+        {
+          "name": "Chicken Tikka",
+          "description": "Tender pieces of chicken marinated in a spicy yogurt blend and grilled to perfection, served with mint chutney.",
+          "price": 350
+        }
+      ]
+    },
+    {
+      "category": "Sizzlers",
+      "items": [
+        {
+          "name": "Veg Sizzler",
+          "description": "A sizzling platter of grilled vegetables, spiced rice or noodles, and a vegetable patty, served with a flavorful sauce and fries.",
+          "price": 400
+        },
+        {
+          "name": "Chicken Sizzler",
+          "description": "Juicy, grilled chicken served on a sizzling platter with spiced rice or noodles, stir-fried vegetables, fries, and a rich, savory sauce.",
+          "price": 500
+        }
+      ]
+    },
+    {
+      "category": "Main Course",
+      "items": [
+        {
+          "name": "Dal Tadka",
+          "description": "Yellow lentils cooked with spices and finished with a tempering of cumin, garlic, and ghee for a flavorful dish.",
+          "price": 180
+        },
+        {
+          "name": "Dal Fry",
+          "description": "A rich, spiced yellow lentil preparation cooked with onions, tomatoes, and a mix of aromatic spices.",
+          "price": 180
+        },
+        {
+          "name": "Dal Makhani",
+          "description": "A creamy, slow-cooked black lentil dish made with butter and cream, giving it a rich and indulgent flavor.",
+          "price": 220
+        },
+        {
+          "name": "Rajma",
+          "description": "Red kidney beans cooked in a spiced tomato-based gravy, served with steamed rice for a wholesome meal.",
+          "price": 200
+        },
+        {
+          "name": "Shahi Paneer",
+          "description": "Soft paneer cubes cooked in a rich and creamy tomato-cashew gravy, flavored with aromatic spices.",
+          "price": 280
+        },
+        {
+          "name": "Kadai Paneer",
+          "description": "Paneer cubes stir-fried with onions, capsicum, and spices in a thick, flavorful gravy.",
+          "price": 270
+        },
+        {
+          "name": "Paneer Do Pyaza",
+          "description": "Paneer cubes cooked with onions in two stages—stir-fried and cooked in a flavorful gravy for a unique taste.",
+          "price": 280
+        },
+        {
+          "name": "Paneer Butter Masala",
+          "description": "A rich and creamy dish with paneer cubes in a buttery tomato-based gravy, mildly spiced and indulgent.",
+          "price": 300
+        },
+        {
+          "name": "Mutter Paneer",
+          "description": "A delicious combination of paneer cubes and green peas cooked in a spiced tomato gravy.",
+          "price": 240
+        },
+        {
+          "name": "Paneer Bhurji",
+          "description": "Crumbled paneer stir-fried with onions, tomatoes, and spices, offering a flavorful and light dish.",
+          "price": 240
+        },
+        {
+          "name": "Creamy Mix Veg",
+          "description": "A rich version of the classic mix veg, with a creamy gravy that adds indulgence to the dish.",
+          "price": 240
+        },
+        {
+          "name": "Matar Mushroom",
+          "description": "A flavorful dish of mushrooms and green peas cooked in a spiced tomato-based gravy.",
+          "price": 240
+        },
+        {
+          "name": "Mushroom Do Pyaza",
+          "description": "Mushrooms cooked with onions in a flavorful gravy, similar to the do pyaza style, for a rich and hearty dish.",
+          "price": 250
+        },
+        {
+          "name": "Jeera Aloo",
+          "description": "A simple yet flavorful dish of potatoes sautéed with cumin seeds and spices, making it a comforting choice.",
+          "price": 200
+        },
+        {
+          "name": "Egg Bhurji",
+          "description": "Scrambled eggs cooked with onions, tomatoes, and spices for a quick and satisfying meal.",
+          "price": 250
+        },
+        {
+          "name": "Egg Curry",
+          "description": "Boiled eggs cooked in a spiced tomato-based gravy, perfect for pairing with rice or roti.",
+          "price": 280
+        },
+        {
+          "name": "Butter Chicken",
+          "description": "Tender chicken pieces cooked in a rich and creamy tomato gravy with butter, offering a mildly spiced and indulgent dish.",
+          "price": 550
+        },
+        {
+          "name": "Kadai Chicken",
+          "description": "A spicy chicken dish cooked with onions, bell peppers, and spices in a thick, flavorful gravy.",
+          "price": 520
+        },
+        {
+          "name": "Rahra Chicken",
+          "description": "A rich and hearty dish with minced and boneless chicken cooked together in a spiced gravy for intense flavor.",
+          "price": 550
+        },
+        {
+          "name": "Pahadi Chicken",
+          "description": "Chicken marinated in a mix of yogurt, green herbs, and spices, offering a unique flavor and grilled to perfection.",
+          "price": 600
+        },
+        {
+          "name": "Chicken Curry",
+          "description": "A classic chicken curry cooked in a spiced gravy with onions, tomatoes, and a blend of aromatic spices.",
+          "price": 480
+        }
+      ]
+    },
+    {
+      "category": "Dessert",
+      "items": [
+        {
+          "name": "Gulab Jamun",
+          "description": "Soft and spongy milk-based dumplings soaked in a sweet sugar syrup, served warm for a classic Indian dessert experience.",
+          "price": 80
+        },
+        {
+          "name": "Hot Brownie",
+          "description": "A rich and fudgy chocolate brownie served warm, perfect for pairing with a scoop of vanilla ice cream.",
+          "price": 100
+        },
+        {
+          "name": "Ice Cream",
+          "description": "A selection of creamy ice creams available in various flavors such as vanilla, chocolate, and strawberry.",
+          "price": 50
+        },
+        {
+          "name": "Gulab Jamun with ice cream",
+          "description": "Soft and spongy milk-based dumplings soaked in a sweet sugar syrup, served warm for a classic Indian dessert experience with ice cream.",
+          "price": 120
+        }
+      ]
+    },
+    {
+      "category": "Rice",
+      "items": [
+        {
+          "name": "Plain Rice",
+          "description": "Steamed white rice, perfect for pairing with curries and dals.",
+          "price": 150
+        },
+        {
+          "name": "Jeera Rice",
+          "description": "Flavored basmati rice cooked with cumin seeds (jeera) and mild spices for a fragrant and tasty side dish.",
+          "price": 180
+        },
+        {
+          "name": "Garlic Rice",
+          "description": "Basmati rice stir-fried with garlic and a hint of spices, offering a flavorful and aromatic twist to plain rice.",
+          "price": 180
+        }
+      ]
+    },
+    {
+      "category": "Indian Breads",
+      "items": [
+        {
+          "name": "Tawa Roti",
+          "description": "A soft and thin whole wheat flatbread cooked on a traditional tawa (griddle), perfect for pairing with any curry.",
+          "price": 20
+        },
+        {
+          "name": "Tandoori Roti",
+          "description": "A slightly crispy whole wheat flatbread baked in a tandoor, offering a smoky flavor and chewy texture.",
+          "price": 20
+        },
+        {
+          "name": "Paratha",
+          "description": "A flaky and layered whole wheat flatbread, cooked with a touch of ghee or butter, ideal for enjoying with curries or dals.",
+          "price": 80
+        },
+        {
+          "name": "Naan",
+          "description": "A soft, fluffy flatbread made from refined flour, baked in a tandoor and perfect for pairing with rich, creamy dishes.",
+          "price": 150
+        },
+        {
+          "name": "Lachha Paratha",
+          "description": "A multi-layered paratha made from whole wheat flour, flaky and crispy, perfect for a hearty meal.",
+          "price": 120
+        },
+        {
+          "name": "Butter Garlic Naan",
+          "description": "A soft naan infused with the flavor of garlic and butter, baked in a tandoor for a flavorful twist on the classic naan.",
+          "price": 200
+        },
+        {
+          "name": "Butter Naan",
+          "description": "A soft and fluffy naan brushed with melted butter for extra richness, ideal for pairing with creamy curries.",
+          "price": 180
+        }
+      ]
+    }
+  ]
+}

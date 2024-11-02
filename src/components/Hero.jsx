@@ -19,32 +19,33 @@ function Hero({ tableIndex }) {
     setSelectedCategory(category);
   };
 
+  // * FIltered items for changing of menu categorywise
   const filteredItems =
     selectedCategory === "All Menu"
       ? menus.menu.reduce(
           (allItems, category) => allItems.concat(category.items),
           []
         )
-      : menus.menu.find((category) => category.category === selectedCategory)
-          ?.items;
+      : menus.menu.find((category) => category.category === selectedCategory).items;
 
-  // Updated addToMenu function to take item as an argument
+// *For adding items into bill
   const addTOMenu = (item) => {
-    console.log("addMenu called");
+    // console.log("addMenu called");
     dispatch(addToOrder({ tableIndex, menuItem: item }));
   };
 
+// *For removing items from bill
   const removeFromMenu = (item) => {
-    console.log("removeMenu called");
+    // console.log("removeMenu called");
     dispatch(removeFromOrder({ tableIndex, menuItem: item }));
   };
 
   return (
     <div
-      className={`p-3 transition-all duration-300 ${
-        sidebarOpen || billSiderOpen ? "mr-[20rem]" : ""
-      }`}
+      className={ `p-3 transition-all duration-300 
+        ${ sidebarOpen || billSiderOpen ? "mr-[20rem]" : "" }` }
     >
+      
       {/* Category Container */}
       <div className="container scrollbar-hide overflow-x-auto w-full bg-slate-200 my-1">
         <CategoryCard
@@ -56,9 +57,7 @@ function Hero({ tableIndex }) {
       {/* Display items */}
       <div className="flex flex-wrap gap-4 ">
         {filteredItems.map((item, index) => {
-          const table = tables[tableIndex]; // Get the current table
-          if (!table) return null;
-
+          const table = tables[tableIndex];  // Get the current table
           const orderItem = table.orders.find((order) => order.name === item.name);
           const itemQuantity = orderItem ? orderItem.quantity : 0; // Get the item quantity for the current table
 
@@ -66,9 +65,9 @@ function Hero({ tableIndex }) {
             <ItemCard
               key={index}
               item={item}
-              itemQuantity={itemQuantity} // Pass the quantity to the ItemCard
-              addItem={() => addTOMenu(item)} // Use the updated function
-              removeItem={() => removeFromMenu(item)} // Use the updated function
+              itemQuantity={itemQuantity}
+              addItem={() => addTOMenu(item)} 
+              removeItem={() => removeFromMenu(item)} 
             />
           );
         })}

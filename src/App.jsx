@@ -4,10 +4,9 @@ import {store } from "./redux/store"
 import { useSelector } from 'react-redux';
 
 function App() {
+const menuIndex = useSelector((state) => state.menuIndex);
 
 console.log('Initial State:', store.getState());
-
-const menuIndex = useSelector((state) => state.menuIndex);
 console.log("Table index for MENU:", menuIndex); 
 
 return (

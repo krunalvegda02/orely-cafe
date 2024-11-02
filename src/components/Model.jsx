@@ -1,33 +1,34 @@
 // CustomerFormModal.js
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { Button, Form, Input, Select } from "antd";
-import { useDispatch ,useSelector} from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addCustomerDetails } from "../redux/Slices/TableSlices";
 import { openBillsider, openSidebar } from "../redux/Slices/SidebarSlice";
 import { setMenuIndex } from "../redux/Slices/MenuIndexSlice"; // Adjust the path if necessary
 
 function Modal({ isOpen, onClose }) {
-  const menuIndex = useSelector((state) => state.menuIndex)
-  const [tableIndex, setTableIndex] = useState(0);
+  const dispatch = useDispatch();
+  const menuIndex = useSelector((state) => state.menuIndex);
 
+  const [tableIndex, setTableIndex] = useState(0);
   const [form] = Form.useForm();
 
-  const dispatch = useDispatch();
-
+  // *Automaticallly close the table on clicking outside of model
   const handleOverlayClick = (e) => {
     if (e.target === e.currentTarget) {
       onClose();
     }
   };
 
+  // *For clicking on SELECITON item table
   const handleTableClick = (index) => {
     setTableIndex(index);
-    form.setFieldsValue({ tableIndex: index }); 
+    form.setFieldsValue({ tableIndex: index });
     dispatch(setMenuIndex(index));
     // console.log("MENU INDEX:" +""+ index);
   };
 
- 
+  //? if model is not open return null
   if (!isOpen) return null;
   return (
     <div
@@ -73,25 +74,18 @@ function Modal({ isOpen, onClose }) {
             label="Select Table"
             rules={[{ required: true }]}
           >
-            {/* <Select placeholder="Select a Table" allowClear> */}
-            <div className="w-[25%]">
-              
+            <div className="w-[42%]">
               {
-              // Array.from({ length: 20 }, (_, i) => (
-              
                 <Select
-                placeholder="Select a Table"
-                onChange={handleTableClick}
-                value={tableIndex}
-              >
-                {Array.from({ length: 20 }, (_, i) => (
-                  <Select.Option
-                   key={i} 
-                   value={i}>
-                  Table {i + 1}
-                  </Select.Option>
-                ))}
-              </Select>
+                  placeholder="Select a Table"
+                  onChange={handleTableClick}
+                >
+                  {Array.from({ length: 20 }, (_, i) => (
+                    <Select.Option key={i} value={i}>
+                      Table {i + 1}
+                    </Select.Option>
+                  ))}
+                </Select>
               }
             </div>
           </Form.Item>

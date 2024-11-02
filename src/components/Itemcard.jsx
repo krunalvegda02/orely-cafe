@@ -1,22 +1,27 @@
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
+import { useSelector } from "react-redux";
 
-export const ItemCard = ({ item, itemQuantity, sidebarOpen, addItem, removeItem }) => {
+export const ItemCard = ({ item, itemQuantity, addItem, removeItem }) => {
+  const sidebarOpen = useSelector((state) => state.sidebar.sidebarOpen);
+
   return (
     <div
-      className={`bg-white rounded-2xl shadow-md p-4 max-w-xs lg:flex lg:flex-col lg:justify-evenly xl:w-[295.5px] md:w-[250px] transition-all duration-300 ${
-        sidebarOpen ? "mr-64" : ""
-      }`}
+      className={`bg-white rounded-2xl shadow-md p-4 flex flex-col justify-between ${sidebarOpen ? "w-[217.5px]" : "w-[235px]"} transition-all duration-300`}
+      style={{ height: "300px" }} 
     >
-      <img
-        alt="Menu Items"
-        className="rounded-t-lg"
-        src="https://placehold.co/300x200"
-      />
-      <div className="p-4 flex-grow">
-        <h2 className="text-lg font-semibold">{item.name}</h2>
-        <p className="text-gray-600">{item.description}</p>
+      <div>
+        <img
+          alt="Menu Items"
+          className="rounded-t-lg w-full"
+          src="https://placehold.co/300x200"
+        />
+        <div className="p-4 flex-grow">
+          <h2 className="text-lg font-semibold">{item.name}</h2>
+        </div>
       </div>
-      <div className="flex justify-between items-center mt-4 pt-2">
+
+      {/* Price and Quantity Controls */}
+      <div className="flex justify-between items-center ">
         <span className="text-2xl font-bold">₹{item.price}</span>
         <div className="container shadow-2xl flex justify-evenly bg-white border-gray-400 border rounded-2xl w-[6rem] h-10 text-center">
           <div className="flex items-center justify-center">

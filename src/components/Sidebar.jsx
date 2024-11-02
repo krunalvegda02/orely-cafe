@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { CloseCircleOutlined } from "@ant-design/icons";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { closeSidebar, openBillsider } from "../redux/Slices/SidebarSlice";
 import BillSider from "../components/billSider";
@@ -7,7 +6,6 @@ import { setMenuIndex } from "../redux/Slices/MenuIndexSlice";
 
 const Sidebar = ({ isOpen }) => {
   const dispatch = useDispatch();
-  // Retrieve table data from the Redux store
   const tables = useSelector((state) => state.tables);
   const billSiderOpen = useSelector((state) => state.sidebar.billSiderOpen);
   const menuIndex = useSelector((state) => state.menuIndex);
@@ -17,8 +15,9 @@ const Sidebar = ({ isOpen }) => {
   };
 
   const openBillSidebar = (index) => {
+    //? Very important part to switch redux Menuindex for changing menu items
     dispatch(setMenuIndex(index));
-    console.log(setMenuIndex(index));
+    // console.log(setMenuIndex(index));
     dispatch(openBillsider());
   };
 
@@ -30,13 +29,6 @@ const Sidebar = ({ isOpen }) => {
       >
         <div className="p-4 flex justify-between items-center">
           <h2 className="text-3xl font-semibold font-sans">Tables</h2>
-
-          <button
-            onClick={closeButtonClick}
-            className="text-red-500 text-4xl mt-0"
-          >
-            <CloseCircleOutlined />
-          </button>
         </div>
 
         <div className="container ml-2 overflow-y-auto scrollbar-hide  h-[90%]">

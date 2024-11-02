@@ -1,17 +1,20 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { openSidebar , closeSidebar, closebillsider } from "../redux/Slices/SidebarSlice";
+import {
+  openSidebar,
+  closeSidebar,
+  closebillsider,
+} from "../redux/Slices/SidebarSlice";
 import Sidebar from "./Sidebar";
 import Modal from "./Model";
 import { PlusOutlined } from "@ant-design/icons";
-
 
 function Header() {
   const dispatch = useDispatch();
   const sidebarOpen = useSelector((state) => state.sidebar.sidebarOpen);
   const billSiderOpen = useSelector((state) => state.sidebar.billSiderOpen);
   const [isModalOpen, setModalOpen] = useState(false);
-  
+
   const handleNewOrderClick = () => {
     setModalOpen(true);
   };
@@ -20,12 +23,13 @@ function Header() {
     setModalOpen(false);
   };
 
-
   const onSidebarIconClick = () => {
-    if (sidebarOpen) {
-      dispatch(closeSidebar());
+    if (billSiderOpen) {
       dispatch(closebillsider());
-    } else {
+    } else if(sidebarOpen){
+      dispatch(closeSidebar());
+    }
+    else {
       dispatch(openSidebar());
     }
   };
@@ -46,34 +50,33 @@ function Header() {
             onClick={() => handleNewOrderClick()}
             className="rounded-3xl container text-lg h-12 px-4 bg-gray-900 text-white "
           >
-            New Order <PlusOutlined className="ml-1 text-xl"/>
+            New Order <PlusOutlined className="ml-1 text-xl" />
           </button>
-          
+
           <div className="">
-          <button
-            type="button"
-            onClick={onSidebarIconClick}
-            // onDoubleClick={handleDoubleClick}
-            className="text-center pl-3 text-white"
-          >
-           <img 
-           src="./src/assets/menu.png" 
-           alt="Sidebar Icon" 
-           height={55}  width={70} 
-           className={`transition-transform duration-500 ${ sidebarOpen ? "rotate-180" : ""}`} /> 
-          </button>
+            <button
+              type="button"
+              onClick={onSidebarIconClick}
+              // onDoubleClick={handleDoubleClick}
+              className="text-center pl-3 text-white"
+            >
+              <img
+                src="./src/assets/menu.png"
+                alt="Sidebar Icon"
+                height={55}
+                width={70}
+                className={`transition-transform duration-500 ${
+                  sidebarOpen ? "rotate-180" : ""
+                }`}
+              />
+            </button>
           </div>
         </div>
-      
       </div>
-      {/* Pass isOpen prop */}
 
-      <Modal
-        isOpen={isModalOpen}
-        onClose={closeModal}
-      />
+      <Modal isOpen={isModalOpen} onClose={closeModal} />
 
-      <Sidebar isOpen={sidebarOpen}  />
+      <Sidebar isOpen={sidebarOpen} />
     </>
   );
 }
