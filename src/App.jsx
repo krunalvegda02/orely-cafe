@@ -13,7 +13,6 @@ return (
     <>
     <Header />
     <Hero tableIndex={menuIndex} /> 
-    
     </>
   )
 }
